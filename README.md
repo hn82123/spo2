@@ -1,8 +1,9 @@
 cd server
-# if cross-compile to ARM
-# source environment first
-qmake spo2.pro
+
+qmake spo2.pro # if cross-compile to ARM, source environment first
+
 make
+
 ./spo2  # to start server
 
 #On the client
