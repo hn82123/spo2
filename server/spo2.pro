@@ -4,19 +4,19 @@
 #
 #-------------------------------------------------
 
-QT       += core gui network
+QT       += core network
+QT -= gui
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 TARGET = spo2
 TEMPLATE = app
+CONFIG += console
+CONFIG -= app_bundle
 
 
 SOURCES += main.cpp\
-        mainwindow.cpp \
     server.cpp
 
-HEADERS  += mainwindow.h \
-    server.h
+HEADERS  +=     server.h
 
-FORMS    += mainwindow.ui
